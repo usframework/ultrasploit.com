@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap');
+
+* { margin: 0; padding: 0; -webkit-tap-highlight-color:  rgba(255, 255, 255, 0); }
+*::selection { background-color: rgba(1, 207, 228, .4) }
+a { text-decoration: none; }
+
+
+body {
+    background-color: #0e0e0e;
+    font-family: "Sofadi One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+
+}   main {
+    width: 100%;
+    height: 100lvh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    gap: 20px;
+
+    .title {
+        margin-top: 10vh;
+        text-align: center;
+        color: #fff;
+
+    }   .live_tv {
+        user-select: none;
+        pointer-events: none;
+
+        iframe {
+            background-color: #292929;
+        }
+
+    }   
+}
+
+@media only screen and (max-width: 480px) {
+    .ltv {
+        /* display: none; */
+        width: 80%;
+        aspect-ratio: 10/11;
+
+    }
+}
