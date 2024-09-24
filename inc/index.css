@@ -54,7 +54,7 @@ body {
         gap: 10px;
 
         img {
-            width: 50px;
+            max-height: 60px;
             pointer-events: none;
 
         }   p {
