@@ -155,7 +155,7 @@ body {
     }   .contact {
         position: relative;
         width: auto;
-        height: 50px;
+        height: auto;
 
         display: flex;
         flex-direction: row;
@@ -190,6 +190,23 @@ body {
             border-radius: 50px;
             background-color: #fff;
         }
+
+    }   .about {
+        border-top: 1px solid #fff;
+        width: 200px;
+        height: auto;
+        padding-top: 30px;
+        text-align: center;
+
+        a {
+            color: #fff;
+            transition: .3s ease-out;
+            font-size: 20px;
+            &:hover {
+                font-size: 22px;
+            }
+        }
+
     }
 
 }
