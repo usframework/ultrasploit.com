@@ -1,5 +1,6 @@
-function reloading() {
-    alert('are you sure?');
-}
+var iframe = document.querySelector("iframe");
 
-window.onbeforeunload = reloading;
+iframe.addEventListener("load", function () {
+    console.log("new url!");
+    alert("NU!");
+});
