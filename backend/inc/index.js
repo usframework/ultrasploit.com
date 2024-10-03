@@ -1,3 +1,3 @@
 $(document).ready(function () {
-    $('.content').load('https://ultrasploit.pythonanywhere.com');
+    // $('.content').load('https://ultrasploit.pythonanywhere.com');
 });
