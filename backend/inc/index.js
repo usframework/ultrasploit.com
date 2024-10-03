@@ -1,3 +1,5 @@
-$('body').bind('beforeunload',function(){
+function reloading() {
     alert('are you sure?');
-});
+}
+
+window.onbeforeunload = reloading;
