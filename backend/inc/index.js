@@ -1,12 +1,12 @@
-// var iframe = document.querySelector("iframe");
+var iframe = document.querySelector("iframe");
 
-// if ( sessionStorage.getItem("lastHref") == false ) {
-//     sessionStorage.setItem("lastHref", iframe.contentWindow.location.href)
+if ( sessionStorage.getItem("lastHref") == false ) {
+    sessionStorage.setItem("lastHref", iframe.src)
 
-// }   else {
-//     iframe.src = sessionStorage.getItem("lastHref");
-// }
+}   else {
+    iframe.src = sessionStorage.getItem("lastHref");
+}
 
-// iframe.addEventListener("load", function () {
-//     sessionStorage.setItem("lastHref", iframe.contentWindow.location.href)
-// });
+iframe.addEventListener("load", function () {
+    sessionStorage.setItem("lastHref", iframe.src)
+});
