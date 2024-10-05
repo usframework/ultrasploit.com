@@ -4,7 +4,7 @@ if ( sessionStorage.getItem("lastHref") == false ) {
     sessionStorage.setItem("lastHref","test")
 
 }   else {
-    iframe.src = sessionStorage.getItem("lastHref");
+    // iframe.src = sessionStorage.getItem("lastHref");
 }
 
 iframe.addEventListener("load", function () {
